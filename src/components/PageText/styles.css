@@ -1,0 +1,6 @@
+
+.pgtext h1{
+    color: var(--color-font-primary);
+    font-size: 24px;
+    font-weight: 700;
+}
