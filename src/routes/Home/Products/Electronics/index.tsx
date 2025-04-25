@@ -1,18 +1,11 @@
 
 
-import NavProducts from "../../../components/NavProducts";
-
-
-
-export default function ProductsEletronics(){
+export default function Eletronics(){
 
     return(
         <body>
             <main>
                 <section className="container">
-                    <div className="mt20 mb20">
-                    <NavProducts/>
-                    </div>
                     <div>
                     <ul className=''>
                     <li> <a href=""> Eletrônico 1 </a></li>

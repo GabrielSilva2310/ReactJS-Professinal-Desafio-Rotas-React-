@@ -1,22 +1,33 @@
 
-import HeaderDefault from "./components/HeaderDefault";
-import HeaderProducts from "./components/NavProducts";
-import About from "./routes/Home/About";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
 import HomeBody from "./routes/Home/HomeBody";
+import Products from "./routes/Home/Products";
+import Electronics from "./routes/Home/Products/Electronics";
+import Computers from "./routes/Home/Products/Computers";
+import Books from "./routes/Home/Products/Books";
+import About from "./routes/Home/About";
 import NotFound from "./routes/Home/NotFound";
-import ProductsBooks from "./routes/Home/ProductsBooks";
-import ProductsComputers from "./routes/Home/ProductsComputers";
-import ProductsEletronics from "./routes/Home/ProductsEletronics";
 
 
 
 function App() {
 
   return (
-    <>
-      <HeaderDefault/>
-      <ProductsBooks/>
-    </>
+    <BrowserRouter>
+    <Routes>
+         <Route path="/" element={<Home/>}> 
+         <Route index element={<HomeBody/>}/>
+         <Route path='/products' element={<Products/>} >
+         <Route path='computers' element={<Computers/>} />
+         <Route path='electronics' element={<Electronics/>} />
+         <Route path='books' element={<Books/>} />
+         </Route>
+         <Route path='about' element={<About/>} />
+         <Route path='*' element={<NotFound/>} />
+         </Route>
+     </Routes>
+    </BrowserRouter>
   );
 }
 

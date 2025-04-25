@@ -1,16 +1,12 @@
-import NavProducts from "../../../components/NavProducts";
 
 
 
-export default function ProductsBooks(){
+export default function Books(){
 
     return(
         <body>
             <main>
                 <section className="container">
-                    <div className="mt20 mb20">
-                    <NavProducts/>
-                    </div>
                     <div>
                     <ul className=''>
                     <li> <a href=""> Livro 1 </a></li>

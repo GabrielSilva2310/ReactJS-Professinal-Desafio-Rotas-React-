@@ -6,7 +6,7 @@ export default function NotFound(){
     return(
         <body>
             <main>
-                <section className="container">
+                <section className="container mt20">
                         <PageText text="Não encontrado!"/>
                 </section>
             </main>

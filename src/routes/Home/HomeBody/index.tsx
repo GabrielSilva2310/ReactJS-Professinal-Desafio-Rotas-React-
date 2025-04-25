@@ -5,7 +5,7 @@ export default function HomeBody(){
     return(
         <body>
             <main>
-                <section className="container">
+                <section className="container mt20">
                 <PageText text="Bem-vindos!"/>
                 </section>
             </main>
