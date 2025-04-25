@@ -16,6 +16,8 @@
     color: var(--color-font-primary);
     font-size: 16px;
     font-weight: 400;
+}
 
-
+.menu-item{
+    font-weight: 700;
 }
